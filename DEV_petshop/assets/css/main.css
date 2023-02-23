@@ -1,0 +1,275 @@
+.wapper{
+    margin: 0;
+}
+/* header */
+header{
+    margin: 0;
+}
+.navbar-info {
+    width: 100%;
+    height: 35px;
+    background-color: #271a1b;
+    position: relative;
+}
+.info-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 10px;
+}
+.info-item {
+    font-size: 1.5rem;
+    color:#6c6465;
+}   
+.info-icon {
+    padding: 0 3px;
+    font-size: 1.8rem;
+}
+
+.login-btn{
+    text-decoration: none;
+    background-color: transparent;
+    color: inherit;
+}
+.login-btn  :hover{
+    color: #F73148;
+
+}
+/* header top */
+.header-top{
+    background-color: var(--primary-color-1);
+    width: 100%;
+    height: 100px;
+}
+.header-top-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+.header-top-item{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.img-logo{
+    width: 95px;
+    height: 95px;
+}
+/* header main */
+nav{
+    width: 100%;
+    height: 55px;
+    background-color:var(--primary-color-2);
+    
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    list-style: none;
+    margin: 0;
+}
+.nav-item{
+    font-size: 1.5rem;
+    padding: 0 32px;
+}
+.nav-item:hover{
+    color: #ff5d40;
+}
+/* message */
+.message{
+    position: fixed;
+    z-index: 99;
+    top: 210px;
+    right: 20px;
+}
+/* section top */
+.banner-container {
+	width: 100%;
+	position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-text{
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size:1.8rem;
+    width: 550px;
+    top: 130px;
+    left: 145px;
+}
+.banner-text h1{
+    margin-top:0;
+}
+.banner-text a{
+    width: 190px;
+    height: 45px;
+    border: 3px solid #fff;
+    text-align: center;
+    padding-top: 10px;
+    font-size:2.0rem;
+    margin-top: 20px;
+}
+.banner-text a:hover{
+    background-color: #fff;
+    color: #6c6465;
+    cursor: pointer;
+}
+.banner-img{
+    position: absolute;
+    margin: 0 auto;
+    top: 55px;
+    left: 530px;
+}
+.banner-img img{
+    width: 350px;
+}
+.banner-box{
+    position: absolute;
+    width: 310px;
+    height: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    top: 60px;
+    right:220px;
+}
+.banner-box h1{
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    width: 245px;
+    height: 70px;
+    background-color: #312122;
+    padding: 20px 0;
+    font-size: 2.8rem;
+    color: #fff;
+    right: 30px;
+}
+.banner-box input{
+    width: 245px;
+    height: 30px;
+    background-color: #f6f5f3;
+    border: 0.5px solid #dedede;
+    margin: 10px;
+}
+.banner-box input:focus{
+    outline-color: rgb(247, 109, 58);
+    box-shadow: 0 0 20px rgb(247, 109, 58, 0.4);
+}
+.input-info{
+    position: absolute;
+    bottom:170px;
+    left:25px;
+}
+.banner-box button{
+    position: absolute;
+    font-size: 1.8rem;
+    width: 245px;
+    height: 30px;
+    background-color: #97b714;
+    border: none;
+    color: #fff;
+    bottom: 30px;
+    left: 30px;
+}
+.banner-box button:hover{
+    background-color: #657b0d;
+    cursor: pointer;
+}
+/* banner1 */
+.banner1 {
+    background-image: url(/assets/img/slider-dog-small-bg.jpg);
+}
+.banner-img1{
+    position: absolute;
+    margin: 0 auto;
+    top: 55px;
+    left: 530px;
+}
+.banner-img1 img{
+    width: 350px;
+}
+/* banner2 */
+.banner2 {
+    background-image: url(/assets/img/slider-dog-bg.jpg);
+	display: block;
+}
+.banner-img2 img{
+    width: 550px;
+}
+.banner-img2{
+    position: absolute;
+    top: 70px;
+    left:400px;
+    
+}
+/* banner 3*/
+.banner3 {
+    background-image: url(/assets/img/slider-cat-bg.jpg);
+	display: block;
+}
+.banner-img3{
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+.banner-img3 img{
+    width:550px;
+}
+.prev-button, .next-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1.8rem;
+	padding: 10px 13px;
+    margin: 0 20px;
+	border: 2px solid #fff;
+    border-radius: 50%;
+	cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.prev-button {
+	left: 0;
+}
+
+.next-button {
+	right: 0;
+}
+
+.dots {
+	text-align: center;
+	padding-top: 20px;
+    position: relative;
+    bottom: 50px;
+}
+
+.dot {
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #fff;
+    border-radius: 50%;
+	margin: 0 8px;
+	cursor: pointer;
+    margin: 0 3px;
+}
+
+.active, .dot:hover {
+	background-color: #fff;
+}
+
