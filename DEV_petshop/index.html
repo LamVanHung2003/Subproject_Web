@@ -9,234 +9,221 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link href="https://fonts.googleapis.com?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"  rel="stylesheet">
-    <link href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+    <link href="/assets/fonts/fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="wapper">
         <!-- header -->
-        <header>
-            <!-- navbar info -->
-            <div class="navbar-info">
-                <ul class="info-list">
-                    <li class="info-item">
-                        <i class="fa-solid fa-house-chimney info-icon"></i>
-                        <span class="info-text">HOME: 319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</span>
+<header id="myHeader">
+        <div id="headerTop">
+            <ul class="headerTop__list">
+                <li><i class="fa-solid fa-house"></i><b>HOME</b>: 319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</li>
+                <li><i class="fa-solid fa-clock"></i>Open Mon-Fri: 6:30AM to 7PM, Sat: 8AM to 5PM</li>
+                <li><i class="fa-solid fa-envelope"></i>info@themerex.ne</li>
+                <li><a href="sign_up-in_form.html">
+                    <i class="fa-solid fa-right-long"></i>
+                    Login
+                </a></li>
+            </ul>
+        </div>
+        <div id="header__main">
+            <div class="header__main-content">
+                <a href="index.html"><img src="/assets/img/asset 0.png" alt="Logo"></a>
+                <ul class="header__content-list">
+                    <li><i class="fa-solid fa-phone-volume icon-circle icon-zoom"></i>Call Us 076 922 0162</li>
+                    <li id="shopping">GIỎ HÀNG / 0 ₫<i class="fa-solid fa-cart-shopping icon-circle"></i>
+                        <div class="cart__comment">
+                            <i class="fa-solid fa-caret-up"></i>
+                            Chưa có sản phẩm trong giỏ hàng
+                        </div>
                     </li>
-                    <li class="info-item">
-                        <i class="fa-regular fa-clock info-icon"></i>
-                        <span class="info-text">Open Mon-Fri: 6:30AM to 7PM, Sat: 8AM to 5PM</span>
-                    </li>
-                    <li class="info-item">
-                        <i class="fa-solid fa-envelope info-icon"></i>
-                        <span class="info-text">info@themerex.ne</span>
-                    </li>
-                    <li class="info-item">
-                        <a href="#" class="login-btn">
-                            <i class="fa-solid fa-arrow-right info-icon"></i>
-                            <span class="info-text">Login</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- header top -->
-            <div class="header-top">
-                <ul class="header-top-list">
-                    <li class="header-top-item">
-                        <a href="#" class="logo">
-                            <img src="/assets/img/asset 0.png" alt="petHospital" class="img-logo">
-                        </a>
-                    </li>
-                    <li class="header-top-item">
-                        <a href="#" class="text">
-                            <i class="fa-solid fa-phone icon-circle"></i>
-                            <span class="text">Call Us 076 922 0162</span>
-                        </a>
-                    </li>
-                    <li class="header-top-item">
-                        <a href="#" class="text">
-                            <span>Giỏ hàng / 0 đ</span>
-                            <i class="fa-solid fa-cart-shopping icon-circle"></i>
-                        </a>
-                    </li>
-                    <li class="header-top-item">
+                    <li id="search__contro"><i class="fa-solid fa-magnifying-glass icon-circle"></i>
                         <div class="search">
-                            <i class="fa-solid fa-magnifying-glass icon-circle"></i>
+                            <i class="fa-solid fa-caret-up caret-up"></i>
+                            <div class="search__input">
+                                <input type="text" placeholder="Tìm kiếm...">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass btn__search"></i>
+                            </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <!-- header main -->
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="text">
-                            <span>Trang chủ</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="text">
-                            <span>Giới thiệu</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="text">
-                            <span>Cửa hàng</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="text">
-                            <span>Tin tức</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="text">
-                            <span>Liên hệ</span>
-                        </a>
-                    </li>
+            <div class="header__main-nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html">
+                        Trang chủ
+                    </a></li>
+                    <li><a href="#">
+                        Giới thiệu
+                    </a></li>
+                    <li class="shop__control"><a href="shop__pet.html">
+                        Cửa hàng<i class="fa-solid fa-chevron-down">
+                        </i>
+                        
+                        <ul class="shop__list">
+                            <i class="fa-solid fa-caret-up shop__caret-up"></i>
+                            <li><a href="#">Giỏ Hàng</a></li>
+                            <li><a href="#">Thanh toán</a></li>
+                            <li><a href="#">Kiểm tra đơn hàng</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#">
+                        Tin Tức
+                    </a></li>
+                    <li><a href="#">
+                        Liên hệ
+                    </a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+        <script src="script/header__slider.js"></script>
+    </header>
         <!-- main -->
         <main>
             <div class="content">
                 <!-- message -->
                     <div class="message">
                         <a href="#">
-                            <img src="/assets/img/asset 21.png" alt="message">
+                            <img src="assets/img/asset 21.png" alt="message">
                         </a>
                     </div>
-                <!-- section top -->
-                <section class="section-top">
-                    <div class="banner-container">
-                        <!-- banner1 -->
-                        <div class="banner banner1">
-                           <div class="banner-text">
-                                <h1><b>Yêu thú cưng của bạn</b></h1>
-                                <h1>Hãy chăm sóc chúng</h1>
-                                <span>Vì thời gian dành cho chúng là<br><b>Không bao giờ thừa thãi</b></span>
-                                
-
-                                <a href="#" class="text">
-                                    <span><b>Đặt cuộc hẹn</b></span>
-                                </a>
-                           </div>
-
-                          <div class="banner-img1">
-                            <img src="/assets/img/asset 1.png" alt="small dog">
-                          </div>
-
-                           <div class="banner-box">
-                                <h1>Tư vấn miễn phí</h1>
-                                <div class="input-info">
-                                    <input type="text" placeholder="Họ và tên">
-                                    <input type="text" placeholder="email">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn"></textarea>
+                <!-- section 1 -->
+                <section class="slider">
+                    <div class="slider-banners">
+                        <!-- 1 -->
+                      <div class="slider-banner slide1">
+                            <div class="slider-banner-text">
+                                <h1><b>Yêu thú cưng của bạn</b>
+                                    <br>Hãy chăm sóc chúng
+                                </h1>
+                                <p>
+                                    Vì thời gian bạn dành cho chúng là
+                                    <br><b>Không bao giờ thừa thãi</b>
+                                </p>
+                                <span>
+                                    <a href="#">
+                                        ĐẶT CUỘC HẸN
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="slider-banner-img">
+                                <img src="assets/img/asset 1.png" alt="">
+                            </div>
+                            <div class="slider-banner-form">
+                                <div class="banner-form-header">
+                                    <p>Tư vấn miễn phí</p>
                                 </div>
-                                <button>Gửi</button>
-                           </div>
+                                <input type="text" placeholder="Họ và tên" id="input__name">
+                                <input type="text" placeholder="Email" id="input__Email">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn"></textarea>
+                                <span>Gửi</span>
+                            </div>
                         </div>
-                        <!-- banner2 -->
-                        <div class="banner banner2">
-                            <div class="banner-text">
-                                <h1><b>Giám sát 24/7</b></h1>
-                                <h1>Cho thú cưng của bạn</h1>
-                                <span>Chúng tôi luôn giữ an toàn và tiện nghi cho thú cưng của bạn<br><b>Dịch vụ luôn 24/7</b></span>
-                                
-
-                                <a href="#" class="text">
-                                    <span><b>Đặt cuộc hẹn</b></span>
+                        <!-- 2 -->
+                      <div class="slider-banner slide2">
+                        <div class="slider-banner-text">
+                            <h1><b>Giám sát 24/7</b>
+                                <br>Cho thú cưng của bạn
+                            </h1>
+                            <p>
+                               Chúng tôi luôn giữ an toàn và tiện nghi cho thú cưng của bạn
+                                <br><b>Dịch vụ luôn 24/7</b>
+                            </p>
+                            <span>
+                                <a href="#">
+                                    ĐẶT CUỘC HẸN
                                 </a>
-                           </div>
-                          <div class="banner-img2">
-                            <img src="/assets/img/asset 2.png" alt="small dog">
-                          </div>
-                           <div class="banner-box">
-                                <h1>Tư vấn miễn phí</h1>
-                                <div class="input-info">
-                                    <input type="text" placeholder="Họ và tên">
-                                    <input type="text" placeholder="email">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn"></textarea>
-                                </div>
-                                <button>Gửi</button>
-                           </div>
+                            </span>
                         </div>
-                        <!-- banner3 -->
-                        <div class="banner banner3">
-                            <div class="banner-text">
-                                <h1><b>Bệnh viện động vật</b></h1>
-                                <h1>Kiểm tra lần đầu</h1>
-                                <span>Mạng lưới trung tâm thú y<br><b>năng lực chuyên môn cao</b></span>
-                                
-
-                                <a href="#" class="text">
-                                    <span><b>Đặt cuộc hẹn</b></span>
+                        <div class="slider-banner-img">
+                            <img src="assets/img/asset 2.png" alt="">
+                        </div>
+                        <div class="slider-banner-form">
+                            <div class="banner-form-header">
+                                <p>Tư vấn miễn phí</p>
+                            </div>
+                            <input type="text" placeholder="Họ và tên" id="input__name">
+                            <input type="text" placeholder="Email" id="input__Email">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn"></textarea>
+                            <span>Gửi</span>
+                        </div>
+                        </div>
+                        <!-- 3 -->
+                      <div class="slider-banner slide3">
+                        <div class="slider-banner-text">
+                            <h1><b>Bệnh viện động vật</b>
+                                <br>Kiểm tra lần đầu
+                            </h1>
+                            <p>
+                                Mạng lưới trung tâm thú y
+                                <br><b>Năng lực và chuyên môn cao</b>
+                            </p>
+                            <span>
+                                <a href="#">
+                                    ĐẶT CUỘC HẸN
                                 </a>
-                           </div>
-                          <div class="banner-img3">
-                            <img src="/assets/img/asset 3.png" alt="small dog">
-                          </div>
-                           <div class="banner-box bannner-box3">
-                                <h1>Tư vấn miễn phí</h1>
-                                <div class="input-info">
-                                    <input type="text" placeholder="Họ và tên">
-                                    <input type="text" placeholder="email">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn"></textarea>
-                                </div>
-                                <button>Gửi</button>
-                           </div>
+                            </span>
                         </div>
-                        <button class="prev-button" onclick="showPrev()">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-                        <button class="next-button" onclick="showNext()">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                         <div class="dots">
-                            <span class="dot" data-banner="1"></span>
-                            <span class="dot" data-banner="2"></span>
-                            <span class="dot" data-banner="3"></span>
+                        <div class="slider-banner-img">
+                            <img src="assets/img/asset 3.png" alt="">
+                        </div>
+                        <div class="slider-banner-form">
+                            <div class="banner-form-header">
+                                <p>Tư vấn miễn phí</p>
+                            </div>
+                            <input type="text" placeholder="Họ và tên" id="input__name">
+                            <input type="text" placeholder="Email" id="input__Email">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn"></textarea>
+                            <span>Gửi</span>
+                        </div>
                         </div>
                     </div>
-                   
-                      
-                    <script src="prev_end-banner.js"></script>
+
+                    <button class="slider-toggle slider-toggle-left">&#8249;</button>
+                    <button class="slider-toggle slider-toggle-right">&#8250;</button>
+                    
+                    <script src="script/switchBanner.js"></script>
                 </section>
-                <!--  -->
-                <section class="section-second">
+                <!--section2-->
+                <section class="section2">
                     <h1><b>Chúng tôi làm gì?</b></h1>
                     <div class="Seperate-line">
                         <i class="fa-solid fa-chevron-up"><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i></i>
                     </div>
                     <p>Thú cưng của bạn đang ở trong tay tốt với đội ngũ chuyên nghiệp của chúng tôi.
                         <br> Chúng tôi luôn đề cao chất lượng và dịch vụ hàng đầu</p>
-                    <div class="selection-pet">
+                    <div class="selection__pet">
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="/assets/img/asset 4.jpeg" alt="img-selection">
+                                    <img src="assets/img/asset 4.jpeg" alt="img-selection">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/assets/img/asset 5.jpeg" alt="img-selection">
+                                    <img src="assets/img/asset 5.jpeg" alt="img-selection">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/assets/img/asset 6.jpeg" alt="img-selection">
+                                    <img src="assets/img/asset 6.jpeg" alt="img-selection">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/assets/img/asset 7.jpeg" alt="img-selection">
+                                    <img src="assets/img/asset 7.jpeg" alt="img-selection">
                                 </a>
                             </li>
                         </ul>
                     </div>  
                 </section>
-            </div>
-            <section class="section-introduce">
-                <img src="/assets/img/asset 26.jpeg" alt="">
+            
+            <!-- section3 -->
+            <section class="section3">
+                <img src="assets/img/asset 26.jpeg" alt="">
                 <div class="introduce">
                     <h1>chúng tôi là ai</h1>
                     <div class="Seperate-line">
@@ -245,11 +232,11 @@
                     <p>Chăm sóc thú cưng không chỉ là những gì chúng ta làm, mà là những gì
                         <br> chúng ta yêu thích và đam mê. Chúng tôi cung cấp cho thú cưng của bạn 
                         <br> an toàn, thoải mái cho thú cưng và các dịch vụ dưới sự giám sát 24/7.</p>
-                    <img src="/assets/img/asset 40.jpg" alt="">        
+                    <img src="assets/img/asset 40.jpg" alt="">        
                 </div>
             </section>
-            <!-- section-we-do -->
-            <section class="section-we-do">
+            <!-- section4 -->
+            <section class="section4">
                 <h1>Chúng tôi yêu thú cưng của bạn</h1>
                 <div class="Seperate-line">
                     <i class="fa-solid fa-chevron-up"><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i></i>
@@ -268,7 +255,7 @@
                                 </p>
                             </div>
                            <div class="we-do-img">
-                                <img src="/assets/img/asset 8.png" alt="img-icon">
+                                <img src="assets/img/asset 8.png" alt="img-icon">
                            </div>
                         </div>
                         <div class="we-do-item">
@@ -280,7 +267,7 @@
                                 </p>
                             </div>
                            <div class="we-do-img">
-                                <img src="/assets/img/asset 9.png" alt="img-icon">
+                                <img src="assets/img/asset 9.png" alt="img-icon">
                            </div>
                         </div>
                         <div class="we-do-item">
@@ -292,19 +279,19 @@
                                 </p>
                             </div>
                            <div class="we-do-img">
-                                <img src="/assets/img/asset 10.png" alt="img-icon">
+                                <img src="assets/img/asset 10.png" alt="img-icon">
                            </div>
                         </div>
                     </div>
 
                     <div class="img-center">
-                        <img src="/assets/img/asset 11.jpeg" alt="">
+                        <img src="assets/img/dog__middle.jpg" alt="">
                     </div>
                    
                     <div class="we-do-right">
                         <div class="we-do-item">
                             <div class="we-do-img">
-                                <img src="/assets/img/asset 12.png" alt="img-icon">
+                                <img src="assets/img/asset 12.png" alt="img-icon">
                            </div>
                             <div class="we-do-text">
                                 <h2>cho thú cưng</h2>
@@ -317,7 +304,7 @@
 
                         <div class="we-do-item">
                             <div class="we-do-img">
-                                <img src="/assets/img/asset 13.png" alt="img-icon">
+                                <img src="assets/img/asset 13.png" alt="img-icon">
                            </div>
                             <div class="we-do-text">
                                 <h2>khách sạn thú cưng</h2>
@@ -330,7 +317,7 @@
 
                         <div class="we-do-item">
                             <div class="we-do-img">
-                                <img src="/assets/img/asset 14.png" alt="img-icon">
+                                <img src="assets/img/asset 14.png" alt="img-icon">
                             </div>
                             <div class="we-do-text">
                                 <h2>thú y</h2>
@@ -343,43 +330,226 @@
                     </div>
                 </div>
             </section>
-            <!-- section feedback -->
-            <section class="section-feedback">
+            <!-- section5 -->
+            <section class="section5">
                 <h1>Phản hồi của khách hàng</h1>
-                <div class="banner-container">
-                    <!-- banner1 -->
-                    <div class="">
-                       
+                <div class="sliders__comment">
+                    <div class="slider__comment active comment1">
+                        <img src="assets/img/asset 15.jpeg" alt="avatar" class="avatar">
+                        <div class="star__separa">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span><i>Thông Nguyễn, Tp.HCM</i></span>
+                        <p>Tôi tải xuống điều này chỉ cần ngày khác sau khi gửi một trang web yêu cầu để quyết định giữa nó và một cách tuyệt vời của người khác. H SUP trợ với <br>
+                            các trải nghiệm nhanh chống và cạnh tranh. Hãy tiếp tục phát huy.
+                        </p>
                     </div>
-                    <!-- banner2 -->
-                    <div class="">
-                      
+                    <div class="slider__comment comment2">
+                        <img src="assets/img/asset 16.jpeg" alt="avatar" class="avatar">
+                        <div class="star__separa">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span><i>Thanh Hà, Bình Dương</i></span>
+                        <p>Nếu bạn đang tìm CV nhiệm vụ bạn có quyền tại đây. mua và kiếm tiền để sử lý và H SUP nhanh chóng . RAT khuyết khích
+                        </p>
                     </div>
-                    <!-- banner3 -->
-                    <div class="">
-                       
+                    <div class="slider__comment comment3">
+                        <img src="assets/img/asset 17.jpeg" alt="avatar" class="avatar">
+                        <div class="star__separa">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span><i>Thanh Ngân, Đồng Nai</i></span>
+                        <p>Đề tài này là chất lượn hàng đầu. Tìm kiếm?, Làm việc không, vì sao H SUP trợ rangin nhóm này cung cấp là tuyệt vời. Tôi không nên kiến nghị đề tài này  <br>
+                            cho dự án tiếp theo của bạn hoặc bất kem đề tài nào khác từ AXIOM cho vấn đề.
+                        </p>
                     </div>
-                    <button class="prev-button prev-button2" onclick="showPrev()">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <button class="next-button next-button2" onclick="showNext()">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                     <div class="dots dots2">
-                        <span class="dot" data-banner="1"></span>
-                        <span class="dot" data-banner="2"></span>
-                        <span class="dot" data-banner="3"></span>
+                    <div class="dots__comment">
+                      <span class="dot__comment active"></span>
+                      <span class="dot__comment"></span>
+                      <span class="dot__comment"></span>
+                    </div>
+                    <button class="prev__comment">&#10094;</button>
+                    <button class="next__comment">&#10095;</button>
+                  </div>
+                  <script src="script/slider__comment.js"></script>
+                </section>
+            </section>
+            <!-- section6 -->
+            <section class="section6">
+                <h1>Tin tức</h1>
+                <div id="formList__news">
+                    <div id="list__news">
+                        <div class="item__news">
+                            <a href="#">
+                                <img src="assets/img/asset 18.jpeg" class="img__news">
+                                <div class="content">
+                                    <span>TIN TỨC</span>
+                                    <h3>Lịch tiêm phòng cho chó</h3>
+                                    <span><i class="fa-solid fa-calendar-days"></i> 8 Tháng ba, 2018</span>
+                                    <p>Lịch tiêm phòng cho chó Qua nhiều năm, tôi sẽ <br>
+                                        đến, ai ai sẽ nostrud aliquip...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item__news">
+                            <a href="#">
+                                <img src="assets/img/asset 19.jpeg" class="img__news">
+                                <div class="content">
+                                    <span>TIN TỨC</span>
+                                    <h3>Một khoảng khắc tạm thời</h3>
+                                    <span><i class="fa-solid fa-calendar-days"></i> 8 Tháng ba, 2018</span>
+                                    <p>Một khoảng khắc tạm thời đối với giá của 1 cái <br>
+                                        hồ, ti-vi khối lượng...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item__news">
+                            <a href="#">
+                                <img src="assets/img/asset 20.jpeg" class="img__news">
+                                <div class="content">
+                                    <span>TIN TỨC</span>
+                                    <h3>Chăm sóc mắt cho chó</h3>
+                                    <span><i class="fa-solid fa-calendar-days"></i> 8 Tháng ba, 2018</span>
+                                    <p>Chăm sóc mắt cho chó Qua nhiều năm, tôi sẽ <br>
+                                        đến, ai ai sẽ nostrud aliquip...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item__news">
+                            <a href="#">
+                                <img src="assets/img/asset 6.jpeg" class="img__news">
+                                <div class="content">
+                                    <span>TIN TỨC</span>
+                                    <h3>Giống hamter: cái nào phù hợp...</h3>
+                                    <span><i class="fa-solid fa-calendar-days"></i> 8 Tháng ba, 2018</span>
+                                    <p>Qua nhiều năm, tôi sẽ đến,  ai sẽ nostrud aliquip <br>khỏi cô lợi thế
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item__news">
+                            <a href="#">
+                                <img src="assets/img/asset 7.jpeg" class="img__news">
+                                <div class="content">
+                                    <span>TIN TỨC</span>
+                                    <h3>Chăm sóc mỏ chim của bạn</h3>
+                                    <span><i class="fa-solid fa-calendar-days"></i> 8 Tháng ba, 2018</span>
+                                    <p>Qua nhiều năm, tôi sẽ đến,  ai sẽ nostrud aliquip <br>khỏi cô lợi thế
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item__news">
+                            <a href="#">
+                                <img src="assets/img/asset 5.jpeg" class="img__news">
+                                <div class="content">
+                                    <span>TIN TỨC</span>
+                                    <h3>Tiêm cillum</h3>
+                                    <span><i class="fa-solid fa-calendar-days"></i> 8 Tháng ba, 2018</span>
+                                    <p>đau cillum
+                                        người da đen cupidatat Excepteur <br> không excepteur, được làm dịu tâm hồn,
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-               
-                  
-                <script src="prev_end-banner.js"></script>
+            
+                
+                <div class="direction">
+                    <button id="prev_news"> < </button>
+                    <button id="next_news"> > </button>
+                </div>
+                <script src="script/slider__news.js"></script>
             </section>
         </main>
         <!-- footer -->
         <footer>
+            <div class="footer-top">
+                <ul>
+                    <li>
+                        <img src="assets/img/asset 0.png" alt="logo">
+                        <p style="color: #888481">Thú cưng của bạn đang ở trong tay tốt với 
+                            <br>đội ngũ bác sĩ thú y, chú rể và huấn luyện
+                            <br>viên chuyên nghiệp của chúng tôi. Chúng
+                            <br>tôi cung cấp động vật của bạn chỉ là một
+                            <br>dịch vụ chất lượng hàng đầu.</p>
+                        <div class="social_network">
+                            <ul>
+                                <li><a href="#">
+                                    <i class="fa-brands fa-facebook-f" id="facebook-icon"></i>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fa-brands fa-instagram" id="intagram-icon"></i>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fa-brands fa-twitter" id="twitter-icon"></i>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="flickr-icon">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-regular fa-circle"></i>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
 
+                    <li>
+                        <h1>Liên Hệ</h1>
+                        <ol>
+                            <li style="color: #888481">319 C16 Lý Thường Kiệt, Phường 15,
+                                <br> Quận 11, Tp.HCM</li>
+                            <li><a href="#">076 922 0162</a></li>
+                            <li><a href="#">demonhunterg@gmail.com <br> mon@mona.media</a></li>
+                            <li><a href="#">demonhunterp</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h1>Hỗ trợ</h1>
+                        <ol>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Chăm sóc khách hàng</a></li>
+                            <li><a href="#">Vận chuyển và Đổi trả hàng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h1>Tin tức</h1>
+                        <ol class="footer__news-list">
+                            <li class="news-item">    
+                                <img src="assets/img/asset 20.jpeg" alt="">
+                                <p style="margin-left:10px">
+                                    <b>Chăm sóc mắt cho chó</b><br>
+                                    ----- <br>
+                                    Chăm sóc mắt cho chó ...
+                               </p>
+                            </li>
+                            <li class="news-item">
+                                <img src="assets/img/asset 7.jpeg" alt="">
+                                <p style="margin-left:10px">
+                                    <b>Chăm sóc mỏ chim của bạn</b><br>
+                                    ----- <br>
+                                    Qua nhiều năm, tôi sẽ ...
+                               </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+             </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Bản quyền thuộc về . Thiết kế website
+                    <img src="https://mona.solutions/logo.png" alt="Logo mona">
+                    <a href="#"> Mona Media</a>
+                </p>
+            </div>
         </footer>
+        <button onclick="topFunction()" id="myBtn" title="Quay Lại đầu trang"><i class="fa-solid fa-caret-up"></i></button>
+        <script src="script/toTop.js"></script>
     </div>
 </body>
 </html>
