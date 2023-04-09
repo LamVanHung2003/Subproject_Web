@@ -1,0 +1,120 @@
+.wapper{
+    background-color: #f6f5f3;
+}
+.section1{
+    margin: 0px;
+    height: 200px;
+    background-image: url(../img/asset\ 4.jpeg);
+    background-position-y:30% ;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    filter: brightness(85%) saturate(120%);
+}
+.section1 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 15px;
+}
+.section1 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+.section1 h2 a{
+    color: white;
+}
+.section1 h2 a:hover{
+    color: black;
+}
+.section2{
+    width: 80%;
+    height: 600px;
+    background-color: #f6f5f3;
+    margin: 60px 10%;
+    display: flex;
+    justify-content:space-between;
+}
+.section2_left{
+    width: 50%;
+}
+.section2_left img{
+    width:586px;
+    height: 584px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.section2_left img:hover {
+  opacity: 0.5;
+}
+.section2_right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.section2_right h1{
+    font-size: 2.6rem;
+    margin: 18px 0;
+    margin-left: 10px;
+}
+.section2_right-top img{
+    width:130px;
+    height: 108px;
+    margin:0 18px 0 30px;
+}
+.section2_right-top{
+    display: flex;
+
+}
+.infomation_shop{
+    font-size: 1rem;
+    text-align:left;
+}
+.infomation_shop p{
+    margin: 8px;
+}
+.section2_right-bottom{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 580px;
+    height:335px;
+    bottom: 0;
+    right: 10px;
+}
+.section2_right-bottom img{
+    width:100px;
+    position: relative;
+    left: 40%;
+    top: -10%;
+}
+.form__contact input{
+    width: 255px;
+    height:40px;
+    font-size: 1.6rem;
+    color: #888;
+    background-color: #f6f5f3;
+    border: 1px solid #acacac;
+    margin: 4px;
+    padding-left: 8px;
+}
+.section2_right-bottom textarea{
+    width: 520px;
+    max-width: 520px;
+    max-height: 120px;
+    background-color: #f6f5f3;
+    border: 1px solid #acacac;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    padding: 8px;
+}
+.form__contact input:focus,.section2_right-bottom textarea:focus{
+    outline: 1px solid #ff6700;
+    box-Shadow: 0 1px 4px #ff6700;
+    border: none;
+}
